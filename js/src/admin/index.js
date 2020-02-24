@@ -1,7 +1,7 @@
 import app from 'flarum/app';
 
-import GithubSettingsModal from './components/GithubSettingsModal';
+import QQSettingsModal from './components/QQSettingModal';
 
-app.initializers.add('flarum-auth-github', () => {
-  app.extensionSettings['flarum-auth-github'] = () => app.modal.show(new GithubSettingsModal());
+app.initializers.add('flarumchina-auth-qq', () => {
+  app.extensionSettings['flarumchina-auth-qq'] = () => app.modal.show(new QQSettingsModal());
 });

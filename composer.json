@@ -1,6 +1,6 @@
 {
-    "name": "flarum/auth-github",
-    "description": "Allow users to log in with GitHub.",
+    "name": "flarumchina/auth-qq",
+    "description": "腾讯互联第三方登录",
     "type": "flarum-extension",
     "keywords": ["authentication"],
     "license": "MIT",
@@ -8,19 +8,23 @@
         {
             "name": "Toby Zerner",
             "email": "toby.zerner@gmail.com"
+        },
+        {
+            "name": "Skywalker512",
+            "email": "houzhenhong@outlook.com"
         }
     ],
     "support": {
-        "issues": "https://github.com/flarum/core/issues",
-        "source": "https://github.com/flarum/auth-github"
+        "issues": "https://gitee.com/FlarumChina/core/issues",
+        "source": "https://gitee.com/FlarumChina/auth-qq"
     },
     "require": {
         "flarum/core": "^0.1.0-beta.9",
-        "league/oauth2-github": "^2.0"
+        "zhongjq/oauth2-qq": "0.2.0"
     },
     "autoload": {
         "psr-4": {
-            "Flarum\\Auth\\Github\\": "src/"
+            "Flarum\\Auth\\Qq\\": "src/"
         }
     },
     "extra": {
@@ -28,9 +32,9 @@
             "dev-master": "0.1.x-dev"
         },
         "flarum-extension": {
-            "title": "GitHub Login",
+            "title": "QQ Login",
             "icon": {
-                "name": "fab fa-github",
+                "name": "fab fa-qq",
                 "backgroundColor": "#eee",
                 "color": "#333"
             }
