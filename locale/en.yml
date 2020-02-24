@@ -1,0 +1,9 @@
+flarum-auth-qq:
+  admin:
+    qq_settings:
+      client_id_label: appid
+      client_secret_label: appkey
+      title: QQ Settings
+  forum:
+    log_in:
+      with_qq_button: Log In with QQ
