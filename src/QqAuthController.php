@@ -87,8 +87,8 @@ class QqAuthController implements RequestHandlerInterface
             'qq', $user->getOpenId(),
             function (Registration $registration) use ($user, $provider, $token) {
                 $registration
-                    ->provideAvatar(array_get($user->toArray(), 'figureurl_qq_2') || array_get($user->toArray(), 'figureurl_qq_1'))
-                    ->suggestUsername(array_get($user->getNickname()))
+                    ->provideAvatar(array_get($user->toArray(), 'figureurl_qq_2') ?? array_get($user->toArray(), 'figureurl_qq_1'))
+                    ->suggestUsername($user->getNickname())
                     ->setPayload($user->toArray());
             }
         );
