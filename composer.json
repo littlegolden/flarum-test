@@ -35,8 +35,8 @@
             "title": "QQ Login",
             "icon": {
                 "name": "fab fa-qq",
-                "backgroundColor": "#eee",
-                "color": "#333"
+                "backgroundColor": "#1479d7",
+                "color": "#fff"
             }
         }
     }
