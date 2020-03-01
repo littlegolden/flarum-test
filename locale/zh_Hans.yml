@@ -1,1 +1,9 @@
-{}
+flarum-auth-qq:
+  admin:
+    qq_settings:
+      client_secret_label: appkey
+      title: QQ 登录设置
+      client_id_label: appid
+  forum:
+    log_in:
+      with_qq_button: 使用 QQ 登录
