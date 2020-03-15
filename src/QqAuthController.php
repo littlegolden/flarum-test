@@ -8,8 +8,6 @@ use Flarum\Forum\Auth\ResponseFactory;
 use Flarum\Http\UrlGenerator;
 use Flarum\Settings\SettingsRepositoryInterface;
 use Laminas\Diactoros\Response\RedirectResponse;
-use League\OAuth2\Client\Provider\Qq;
-use League\OAuth2\Client\Provider\qqResourceOwner;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Server\RequestHandlerInterface;
@@ -80,7 +78,7 @@ class QqAuthController implements RequestHandlerInterface
 
         $token = $provider->getAccessToken('authorization_code', compact('code'));
 
-        /** @var qqResourceOwner $user */
+        /** @var QqResourceOwner $user */
         $user = $provider->getResourceOwner($token);
 
         return $this->response->make(
