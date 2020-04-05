@@ -1,5 +1,5 @@
 {
-    "name": "flarumchina/auth-qq",
+    "name": "flarumcn/auth-qq",
     "description": "腾讯互联第三方登录",
     "type": "flarum-extension",
     "keywords": ["authentication"],
@@ -15,8 +15,8 @@
         }
     ],
     "support": {
-        "issues": "https://gitee.com/FlarumChina/core/issues",
-        "source": "https://gitee.com/FlarumChina/auth-qq"
+        "issues": "https://gitee.com/flarumcn/core/issues",
+        "source": "https://gitee.com/flarumcn/auth-qq"
     },
     "require": {
         "flarum/core": "^0.1.0-beta.9"
